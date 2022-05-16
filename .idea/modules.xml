@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema.iml" filepath="$PROJECT_DIR$/cinema/cinema.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-auth/cinema-auth.iml" filepath="$PROJECT_DIR$/cinema/cinema-auth/cinema-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-visual/cinema-codegen/cinema-codegen.iml" filepath="$PROJECT_DIR$/cinema/cinema-visual/cinema-codegen/cinema-codegen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-common/cinema-common.iml" filepath="$PROJECT_DIR$/cinema/cinema-common/cinema-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-common/cinema-common-bom/cinema-common-bom.iml" filepath="$PROJECT_DIR$/cinema/cinema-common/cinema-common-bom/cinema-common-bom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-common/cinema-common-core/cinema-common-core.iml" filepath="$PROJECT_DIR$/cinema/cinema-common/cinema-common-core/cinema-common-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-common/cinema-common-datasource/cinema-common-datasource.iml" filepath="$PROJECT_DIR$/cinema/cinema-common/cinema-common-datasource/cinema-common-datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-common/cinema-common-feign/cinema-common-feign.iml" filepath="$PROJECT_DIR$/cinema/cinema-common/cinema-common-feign/cinema-common-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-common/cinema-common-job/cinema-common-job.iml" filepath="$PROJECT_DIR$/cinema/cinema-common/cinema-common-job/cinema-common-job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-common/cinema-common-log/cinema-common-log.iml" filepath="$PROJECT_DIR$/cinema/cinema-common/cinema-common-log/cinema-common-log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-common/cinema-common-mybatis/cinema-common-mybatis.iml" filepath="$PROJECT_DIR$/cinema/cinema-common/cinema-common-mybatis/cinema-common-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-common/cinema-common-security/cinema-common-security.iml" filepath="$PROJECT_DIR$/cinema/cinema-common/cinema-common-security/cinema-common-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-common/cinema-common-swagger/cinema-common-swagger.iml" filepath="$PROJECT_DIR$/cinema/cinema-common/cinema-common-swagger/cinema-common-swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-common/cinema-common-test/cinema-common-test.iml" filepath="$PROJECT_DIR$/cinema/cinema-common/cinema-common-test/cinema-common-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-gateway/cinema-gateway.iml" filepath="$PROJECT_DIR$/cinema/cinema-gateway/cinema-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-visual/cinema-monitor/cinema-monitor.iml" filepath="$PROJECT_DIR$/cinema/cinema-visual/cinema-monitor/cinema-monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-register/cinema-register.iml" filepath="$PROJECT_DIR$/cinema/cinema-register/cinema-register.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-visual/cinema-sentinel-dashboard/cinema-sentinel-dashboard.iml" filepath="$PROJECT_DIR$/cinema/cinema-visual/cinema-sentinel-dashboard/cinema-sentinel-dashboard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-upms/cinema-upms.iml" filepath="$PROJECT_DIR$/cinema/cinema-upms/cinema-upms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-upms/cinema-upms-api/cinema-upms-api.iml" filepath="$PROJECT_DIR$/cinema/cinema-upms/cinema-upms-api/cinema-upms-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-upms/cinema-upms-biz/cinema-upms-biz.iml" filepath="$PROJECT_DIR$/cinema/cinema-upms/cinema-upms-biz/cinema-upms-biz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-visual/cinema-visual.iml" filepath="$PROJECT_DIR$/cinema/cinema-visual/cinema-visual.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cinema/cinema-visual/cinema-xxl-job-admin/cinema-xxl-job-admin.iml" filepath="$PROJECT_DIR$/cinema/cinema-visual/cinema-xxl-job-admin/cinema-xxl-job-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/graduation_project.iml" filepath="$PROJECT_DIR$/.idea/graduation_project.iml" />
+    </modules>
+  </component>
+</project>

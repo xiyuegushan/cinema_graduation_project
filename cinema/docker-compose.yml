@@ -1,0 +1,93 @@
+version: '3'
+services:
+  cinema-mysql:
+    build:
+      context: ./db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    restart: always
+    container_name: cinema-mysql
+    image: cinema-mysql
+    ports:
+      - 3306:3306
+
+  cinema-redis:
+    image: redis:6.2.6
+    ports:
+      - 6379:6379
+    restart: always
+    container_name: cinema-redis
+    hostname: cinema-redis
+
+  cinema-register:
+    build:
+      context: ./cinema-register
+    restart: always
+    ports:
+      - 8848:8848
+    container_name: cinema-register
+    hostname: cinema-register
+    image: cinema-register
+
+  cinema-gateway:
+    build:
+      context: ./cinema-gateway
+    restart: always
+    ports:
+      - 9999:9999
+    container_name: cinema-gateway
+    hostname: cinema-gateway
+    image: cinema-gateway
+
+  cinema-auth:
+    build:
+      context: ./cinema-auth
+    restart: always
+    container_name: cinema-auth
+    hostname: cinema-auth
+    image: cinema-auth
+
+  cinema-upms:
+    build:
+      context: ./cinema-upms/cinema-upms-biz
+    restart: always
+    container_name: cinema-upms
+    hostname: cinema-upms
+    image: cinema-upms
+
+  cinema-monitor:
+    build:
+      context: ./cinema-visual/cinema-monitor
+    restart: always
+    ports:
+      - 5001:5001
+    container_name: cinema-monitor
+    hostname: cinema-monitor
+    image: cinema-monitor
+
+  cinema-sentinel:
+    build:
+      context: ./cinema-visual/cinema-sentinel-dashboard
+    restart: always
+    image: cinema-sentinel
+    container_name: cinema-sentinel
+    ports:
+      - 5003:5003
+
+  cinema-codegen:
+    build:
+      context: ./cinema-visual/cinema-codegen
+    restart: always
+    container_name: cinema-codegen
+    hostname: cinema-codegen
+    image: cinema-codegen
+
+  cinema-job:
+    build:
+      context: ./cinema-visual/cinema-xxl-job-admin
+    restart: always
+    container_name: cinema-job
+    hostname: cinema-job
+    image: cinema-job
+    ports:
+      - 5004:5004

@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.lzh.cinema.common.core.config.JacksonConfiguration,\
+  cn.lzh.cinema.common.core.config.RedisTemplateConfiguration,\
+  cn.lzh.cinema.common.core.config.RestTemplateConfiguration,\
+  cn.lzh.cinema.common.core.util.SpringContextHolder,\
+  cn.lzh.cinema.common.core.config.WebMvcConfiguration

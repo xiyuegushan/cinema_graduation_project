@@ -1,0 +1,6 @@
+cn.lzh.cinema.common.feign.CinemaFeignAutoConfiguration=\
+  cn.lzh.cinema.admin.api.feign.RemoteDictService,\
+  cn.lzh.cinema.admin.api.feign.RemoteDeptService,\
+  cn.lzh.cinema.admin.api.feign.RemoteLogService,\
+  cn.lzh.cinema.admin.api.feign.RemoteTokenService,\
+  cn.lzh.cinema.admin.api.feign.RemoteUserService

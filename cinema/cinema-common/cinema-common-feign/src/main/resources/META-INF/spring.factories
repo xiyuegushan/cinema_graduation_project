@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    cn.lzh.cinema.common.feign.CinemaFeignAutoConfiguration,\
+    cn.lzh.cinema.common.feign.sentinel.SentinelAutoConfiguration,\
+    cn.lzh.cinema.common.feign.sentinel.handle.GlobalBizExceptionHandler

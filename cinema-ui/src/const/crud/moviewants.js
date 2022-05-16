@@ -1,0 +1,76 @@
+export const tableOption = {
+  "align": "center",
+  "index": true,
+  "border": true,
+  "column": [{
+    "prop": "id",
+    "type": "input",
+    "label": "主键",
+    "rules": [{"message": "主键必须填写", "required": true}],
+    "display": false,
+    "required": true,
+    "addDisplay": false,
+    "editDisabled": true
+  }, {
+    "prop": "movieId",
+    "type": "input",
+    "label": "电影id",
+    "rules": [{"message": "电影id必须填写", "required": true}],
+    "display": true,
+    "required": true,
+    "addDisplay": false,
+    "editDisabled": true
+  }, {
+    "prop": "userId",
+    "type": "input",
+    "label": "用户id",
+    "rules": [{"message": "用户id必须填写", "required": true}],
+    "display": true,
+    "required": true,
+    "addDisplay": false,
+    "editDisabled": true
+  }, {
+    "prop": "createBy",
+    "type": "input",
+    "label": "创建人",
+    "display": false,
+    "addDisplay": false,
+    "editDisabled": true
+  }, {
+    "prop": "createTime",
+    "type": "input",
+    "label": "创建时间",
+    "rules": [],
+    "display": false,
+    "addDisplay": false,
+    "editDisabled": true
+  }, {
+    "prop": "updateBy",
+    "type": "input",
+    "label": "更新人",
+    "display": false,
+    "addDisplay": false,
+    "editDisabled": true
+  }, {
+    "prop": "updateTime",
+    "type": "input",
+    "label": "修改时间",
+    "display": false,
+    "addDisplay": false,
+    "editDisabled": true
+  }],
+  "gutter": 0,
+  "stripe": true,
+  "menuBtn": true,
+  "emptyBtn": true,
+  "emptyText": "清空",
+  "menuAlign": "center",
+  "submitBtn": true,
+  "indexLabel": "序号",
+  "labelWidth": 120,
+  "submitText": "提交",
+  "labelSuffix": "：",
+  "menuPosition": "center",
+  "labelPosition": "left",
+  "searchMenuSpan": 6
+}

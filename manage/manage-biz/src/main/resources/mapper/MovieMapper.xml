@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~
+  ~      Copyright (c) 2018-2025, lengleng All rights reserved.
+  ~
+  ~  Redistribution and use in source and binary forms, with or without
+  ~  modification, are permitted provided that the following conditions are met:
+  ~
+  ~ Redistributions of source code must retain the above copyright notice,
+  ~  this list of conditions and the following disclaimer.
+  ~  Redistributions in binary form must reproduce the above copyright
+  ~  notice, this list of conditions and the following disclaimer in the
+  ~  documentation and/or other materials provided with the distribution.
+  ~  Neither the name of the cinema4cloud.com developer nor the names of its
+  ~  contributors may be used to endorse or promote products derived from
+  ~  this software without specific prior written permission.
+  ~  Author: lengleng (wangiegie@gmail.com)
+  ~
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.lzh.cinema.manage.mapper.MovieMapper">
+
+    <resultMap id="movieMap" type="cn.lzh.cinema.manage.entity.Movie">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="img" column="img"/>
+        <result property="introduction" column="introduction"/>
+        <result property="star" column="star"/>
+        <result property="producer" column="producer"/>
+        <result property="director" column="director"/>
+        <result property="screenwriter" column="screenwriter"/>
+        <result property="language" column="language"/>
+        <result property="length" column="length"/>
+        <result property="category" column="category"/>
+        <result property="releaseDate" column="release_date"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+    </resultMap>
+
+    <select id="getMostWantsMovie" resultMap="movieMap">
+        SELECT *
+        FROM cinema_manage.movie
+                 INNER JOIN
+             (SELECT movie_id, COUNT(*) AS count
+              FROM cinema_manage.movie_wants
+              GROUP BY `movie_id`
+              ORDER BY count DESC
+             ) as movie_wants_count
+             ON movie_wants_count.movie_id = movie.id
+    </select>
+
+    <select id="getHighScoreMovie" resultMap="movieMap">
+        SELECT *
+        FROM cinema_manage.movie
+                 INNER JOIN
+             (SELECT movie_id, AVG(score) as score
+              FROM cinema_manage.movie_score
+              GROUP BY `movie_id`
+              ORDER BY score DESC
+             ) AS movie_score_count ON movie_score_count.movie_id = movie.id
+    </select>
+</mapper>

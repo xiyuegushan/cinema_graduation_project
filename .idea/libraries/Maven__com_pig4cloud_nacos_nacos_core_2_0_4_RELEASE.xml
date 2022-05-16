@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.pig4cloud.nacos:nacos-core:2.0.4.RELEASE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../MavenRepository/com/pig4cloud/nacos/nacos-core/2.0.4.RELEASE/nacos-core-2.0.4.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../MavenRepository/com/pig4cloud/nacos/nacos-core/2.0.4.RELEASE/nacos-core-2.0.4.RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../MavenRepository/com/pig4cloud/nacos/nacos-core/2.0.4.RELEASE/nacos-core-2.0.4.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+            http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>cn.lzh</groupId>
+        <artifactId>manage</artifactId>
+        <version>3.4.5</version>
+    </parent>
+
+    <artifactId>manage-biz</artifactId>
+    <packaging>jar</packaging>
+
+    <description>manage 业务模块</description>
+
+
+    <dependencies>
+        <!--必备: 依赖api模块-->
+        <dependency>
+            <groupId>cn.lzh</groupId>
+            <artifactId>manage-api</artifactId>
+            <version>3.4.5</version>
+        </dependency>
+        <!--必备：安全模块-->
+        <dependency>
+            <groupId>cn.lzh</groupId>
+            <artifactId>cinema-common-security</artifactId>
+        </dependency>
+        <!--必备：日志处理-->
+        <dependency>
+            <groupId>cn.lzh</groupId>
+            <artifactId>cinema-common-log</artifactId>
+        </dependency>
+        <!--必备：swagger-->
+        <dependency>
+            <groupId>cn.lzh</groupId>
+            <artifactId>cinema-common-swagger</artifactId>
+        </dependency>
+        <!--必备: 注册中心客户端-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!--必备: 配置中心客户端-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <!--必备：undertow容器-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-undertow</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>io.fabric8</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

@@ -1,0 +1,8 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  cn.lzh.cinema.common.security.service.CinemaUserDetailsServiceImpl,\
+  cn.lzh.cinema.common.security.service.CinemaAppUserDetailsServiceImpl,\
+  cn.lzh.cinema.common.security.component.CinemaSecurityInnerAspect,\
+  cn.lzh.cinema.common.security.component.CinemaTokenStoreAutoConfiguration,\
+  cn.lzh.cinema.common.security.component.CinemaTokenStoreAutoCleanSchedule,\
+  cn.lzh.cinema.common.security.component.CinemaSecurityMessageSourceConfiguration
+

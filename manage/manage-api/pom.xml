@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+            http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>cn.lzh</groupId>
+		<artifactId>manage</artifactId>
+		<version>3.4.5</version>
+	</parent>
+
+	<artifactId>manage-api</artifactId>
+	<packaging>jar</packaging>
+
+	<description>manage 接口模块</description>
+
+	<dependencies>
+		<!-- core 工具类 -->
+		<dependency>
+			<groupId>cn.lzh</groupId>
+			<artifactId>cinema-common-core</artifactId>
+		</dependency>
+		<!-- feign 依赖 -->
+		<dependency>
+			<groupId>cn.lzh</groupId>
+			<artifactId>cinema-common-feign</artifactId>
+		</dependency>
+		<!--可选：mybatis （需要链接数据库开启）-->
+		<dependency>
+			<groupId>cn.lzh</groupId>
+			<artifactId>cinema-common-mybatis</artifactId>
+		</dependency>
+	</dependencies>
+</project>

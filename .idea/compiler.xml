@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cinema-auth" />
+        <module name="cinema-common-swagger" />
+        <module name="cinema-common-core" />
+        <module name="cinema-xxl-job-admin" />
+        <module name="cinema-common-feign" />
+        <module name="cinema-common-test" />
+        <module name="cinema-register" />
+        <module name="cinema-upms-api" />
+        <module name="cinema-common-job" />
+        <module name="cinema-monitor" />
+        <module name="cinema-common-mybatis" />
+        <module name="cinema-codegen" />
+        <module name="cinema-common-log" />
+        <module name="cinema-gateway" />
+        <module name="cinema-upms-biz" />
+        <module name="cinema-sentinel-dashboard" />
+        <module name="cinema-common-security" />
+        <module name="cinema-common-datasource" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cinema" target="1.8" />
+      <module name="cinema-auth" target="1.8" />
+      <module name="cinema-codegen" target="1.8" />
+      <module name="cinema-common" target="1.8" />
+      <module name="cinema-common-bom" target="1.8" />
+      <module name="cinema-common-core" target="1.8" />
+      <module name="cinema-common-datasource" target="1.8" />
+      <module name="cinema-common-feign" target="1.8" />
+      <module name="cinema-common-job" target="1.8" />
+      <module name="cinema-common-log" target="1.8" />
+      <module name="cinema-common-mybatis" target="1.8" />
+      <module name="cinema-common-security" target="1.8" />
+      <module name="cinema-common-swagger" target="1.8" />
+      <module name="cinema-common-test" target="1.8" />
+      <module name="cinema-gateway" target="1.8" />
+      <module name="cinema-monitor" target="1.8" />
+      <module name="cinema-register" target="1.8" />
+      <module name="cinema-sentinel-dashboard" target="1.8" />
+      <module name="cinema-upms" target="1.8" />
+      <module name="cinema-upms-api" target="1.8" />
+      <module name="cinema-upms-biz" target="1.8" />
+      <module name="cinema-visual" target="1.8" />
+      <module name="cinema-xxl-job-admin" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
