@@ -3,7 +3,7 @@
 
 -cinema             影院系统管理端后端(pig框架)
 
--manage             影院系统客户端前端
+-manage             影院系统客户端后端
 
 -cinema-ui          影院系统管理端前端(pig框架)
 
